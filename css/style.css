@@ -1,0 +1,179 @@
+body{
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.content{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 450px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #2b2a2a;
+    padding: 55px;
+    border-radius: 12px;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.top input{
+    width: 350px;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #191818;
+    outline: none;
+    font-size: 1.2rem;
+    background-color: #191818;
+    color: #fff;
+}
+
+.top button{
+    width: 45px;
+    border-radius: 12px;
+    border: 1px solid #191818;
+    background-color: #191818;
+    color: #fff;
+    outline: 0;
+    cursor: pointer;
+}
+
+.top button:hover{
+    background-color: #1f1e1e;
+}
+
+#listAssignment{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#listAssignment li{
+    padding: 20px;
+    background-color: #191818;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btnAcao{
+    border-radius: 20px;
+    border: 1px solid #191818;
+    width: 38px;
+    height: 38px;
+    margin-right: 8px;
+    cursor: pointer;
+    background-color: #2b2a2a;
+    color: #fff;
+    outline: 0;
+}
+
+.btnAcao:hover{
+    background-color: #3c3a3a;
+}
+
+#windowsEdition{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 200;
+    padding: 20px;
+    background-color: #191818;
+    border: 1px solid #2f2e2e;
+    width: 415px;
+    border-radius: 12px;
+    display:none;
+}
+
+#windowsEdition.open{
+    display: block !important; 
+}
+
+#windowsEditionBg{
+    position: fixed;
+    top: 0;
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+    opacity: 0.9;
+    z-index: 100;
+    right: 0;
+    display:none;
+}
+
+#windowsEditionBg.open{
+    display: block !important; 
+}
+
+#windowEditionBtnClose{
+    position: absolute;
+    top: -25px;
+    right: -18px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #2d2c2c;
+    background-color: #2d2c2c;
+    color: #fff;
+    outline: 0;
+    cursor: pointer;
+}
+
+form{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.fmr-line{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.fmr-line label{
+    margin-bottom: 7px;
+}
+
+.fmr-line input{
+    padding: 15px;
+    color: white;
+    border-radius: 12px;
+    background-color: #2d2c2c;
+    outline: 0;
+    border: 1px solid #191818;
+    font-size: 1.2rem;
+}
+
+.fmr-line button{
+    background-color: #2d2c2c;
+    border: 1px solid #191818;
+    color: #ccc;
+    padding: 7px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    height: 50px;
+    font-size: 1.3rem;
+    outline: 0;
+}
+
+.fmr-line button:hover{
+    background-color: #3c3a3a;
+}
+
+
+.textAssignment{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 290px;
+    white-space: nowrap;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/script.js" defer></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Lista de Tarefas</title>
+    </head>
+    <body>
+        
+        <div class="content">
+            <div class="top">
+                <input id="inputNewAssignment" type="text" placeholder="Adicione uma nova tarefa">
+                <button id="btnAddAssignment"><i class="fa fa-plus"></i></button>
+            </div><!--top-->
+
+            <ul id="listAssignment">
+                <!--<li>
+                    <span class="textAssignment">Tarefa 1</span>
+                    <div>
+                        <button class="btnAcao">
+                            <i class="fa fa-pencil"></i>
+                        </button>
+                        <button class="btnAcao">
+                            <i class="fa fa-trash"></i>
+                        </button>
+                    </div>
+                </li>-->
+            </ul><!--listAssignment-->
+        </div><!--content-->
+
+        <div id="windowsEdition">
+            <button id="windowEditionBtnClose">
+                <i class="fa fa-remove fa-2x"></i>
+            </button>
+            <h2 id="idAssignmentEdition">#1021</h2>
+            <hr>
+            <form>
+                <div class="fmr-line">
+                    <label for="nome">Nome</label>
+                    <input id="inputAssignmentNameEdition">
+                </div>
+                <div class="fmr-line">
+                    <button id="btnRefreshAssignment">Salvar</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="windowsEditionBg"></div>
+
+    </body>
+</html>
